@@ -1,0 +1,83 @@
+body{
+    
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    color: brown;
+    text-align: center;
+}
+#generate-jokes{
+    width: 200px;
+    background-color: green;
+    color: white;
+    border: none;
+    height: 30px;
+    margin: 10px;
+
+}
+#jokeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+  width: 90%;
+  margin-top: 20px; 
+   
+}
+
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #111;
+  --card-bg: #fff;
+  --button-bg: #007bff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.subcontainer {
+  background: var(--card-bg);
+}
+
+button {
+  background-color: var(--button-bg);
+  color: white;
+}
+
+/* Dark Theme */
+body.dark-mode {
+  --bg-color: #111;
+  --text-color: #f9f9f9;
+  --card-bg: #1e1e1e;
+  --button-bg: #444;
+}
+
+.subcontainer{
+    text-align: start;
+      opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+ 
+}
+
+
+.subcontainer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 400px) {
+ 
+
+  #generate-jokes{
+    width: 100%;
+    font-size: 0.95rem;
+  }
+}
